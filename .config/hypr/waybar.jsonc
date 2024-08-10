@@ -1,0 +1,72 @@
+{
+    "height": 24,
+    "spacing": 0, // Gaps between modules (4px)
+    "modules-left": ["hyprland/workspaces", "hyprland/window", "custom/media"],
+    "modules-center": ["keyboard-state"],
+    "modules-right": ["pulseaudio", "network", "memory", "battery", "clock"],
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{icon}{name}{icon}",
+        "format-icons": {
+            // color red
+            "active": "",
+            "default": ""
+        }
+    },
+    "clock": {
+        "timezone": "America/Argentina/Buenos_Aires",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "memory": {
+        "format": "{}%"
+    },
+    "battery": {
+        "battery": {
+          "bat": "BAT0"
+        },
+        "states": {
+            "good": 85,
+            "warning": 50,
+            "critical": 25
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format-wifi": "{ipaddr}",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-disconnected": "Disconnected ⚠"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": " {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-icons": {
+            "headphone": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    }
+}
+
