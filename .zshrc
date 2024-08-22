@@ -4,7 +4,7 @@ export BAT_THEME="gruvbox-dark"
 
 export PATH=$HOME/.cache/rebar3/bin:$PATH 
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.zig:$PATH
+export PATH=$HOME/.zig/$(cat $HOME/.zig/version):$PATH
 export PATH=$HOME/.lsp:$PATH
 
 # OMZ
